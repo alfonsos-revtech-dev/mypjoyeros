@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyP Joyeros - Alta Joyería</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="container header-container">
+                <div class="mobile-header-left">
+                    <div class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <a href="#" class="logo-link">
+                        <img src="img/pag/logo.png" alt="MYP Joyeros" class="logo-img">
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="nav-link nav-active" data-target="home">Inicio</a></li>
+                        <li><a href="#" class="nav-link" data-target="engagement">Anillos de Compromiso</a></li>
+                        <li><a href="#" class="nav-link" data-target="policies">Nuestras Políticas</a></li>
+                        <li><a href="#" class="nav-link" data-target="promotions">Promociones</a></li>
+                        <li><a href="#" class="nav-link" data-target="contact">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="header-right">
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="screen active" id="home">
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="animate-fade-in">Eternidad hecha joya</h1>
+                        <p class="animate-fade-in">Descubre nuestras exclusivas colecciones de alta joyería, creadas para celebrar momentos extraordinarios con elegancia atemporal.</p>
+                        <a href="#" class="btn animate-fade-in" id="explore-btn">Explorar Colección</a>
+                    </div>
+                </div>
+                <div class="hero-image" style="background-image: url('img/pag/inicio.png')"></div>
+            </section>
+
+            <section class="engagement-rings">
+                <div class="container">
+                    <div class="section-title">
+                        <h2 class="animate-fade-in">Colección Destacada</h2>
+                        <p class="animate-fade-in">Piezas únicas elaboradas con los materiales más finos y atención meticulosa al detalle.</p>
+                    </div>
+                    <div class="products-grid">
+                        <div class="product-card animate-slide-up">
+                            <div class="product-badge">Nuevo</div>
+                            <div class="product-image">
+                                <img src="img/anillos/inicio_anillo_uno.jpeg" alt="Anillo de Oro">
+                                <div class="product-actions">
+                                    <div class="action-btn"><i class="fas fa-heart"></i></div>
+                                    <div class="action-btn add-to-cart"><i class="fas fa-shopping-bag"></i></div>
+                                    <div class="action-btn"><i class="fas fa-search"></i></div>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Anillos Compromiso 14k</h3>
+                                <div class="product-price">$35,000 MXN</div>
+                                <a href="#" class="btn">Ver Detalles</a>
+                            </div>
+                        </div>
+                        <div class="product-card animate-slide-up">
+                            <div class="product-badge">Más vendido</div>
+                            <div class="product-image">
+                                <img src="img/anillos/inicio_anillo_dos.jpeg" alt="Collar Diamante">
+                                <div class="product-actions">
+                                    <div class="action-btn"><i class="fas fa-heart"></i></div>
+                                    <div class="action-btn add-to-cart"><i class="fas fa-shopping-bag"></i></div>
+                                    <div class="action-btn"><i class="fas fa-search"></i></div>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Anillo Esmeralda 14K</h3>
+                                <div class="product-price">$62,000 MXN</div>
+                                <a href="#" class="btn">Ver Detalles</a>
+                            </div>
+                        </div>
+                        <div class="product-card animate-slide-up">
+                            <div class="product-badge">Exclusivo</div>
+                            <div class="product-image">
+                                <img src="img/anillos/inicio_anillo_tres.jpeg" alt="Pulsera Platino">
+                                <div class="product-actions">
+                                    <div class="action-btn"><i class="fas fa-heart"></i></div>
+                                    <div class="action-btn add-to-cart"><i class="fas fa-shopping-bag"></i></div>
+                                    <div class="action-btn"><i class="fas fa-search"></i></div>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Diamantes Oro Blanco 18K</h3>
+                                <div class="product-price">$48,500 MXN</div>
+                                <a href="#" class="btn">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="screen" id="engagement">
+            <section class="engagement-rings">
+                <div class="container">
+                    <div class="section-title">
+                        <h2 class="animate-fade-in">Anillos de Compromiso</h2>
+                        <p class="animate-fade-in">Descubre nuestra exclusiva colección de anillos de compromiso, diseñados para capturar la esencia de tu amor eterno.</p>
+                    </div>
+                    
+                    <div class="search-bar">
+                        <input type="text" placeholder="Buscar anillos...">
+                    </div>
+                    
+                    <div class="filter-bar">
+                        <button class="filter-btn active">Todos</button>
+                        <button class="filter-btn">Solitario</button>
+                        <button class="filter-btn">Halo</button>
+                        <button class="filter-btn">Tres Piedras</button>
+                        <button class="filter-btn">Vintage</button>
+                        <button class="filter-btn">Modernos</button>
+                    </div>
+                    
+                    <div class="products-grid">
+                        <div class="product-card animate-slide-up">
+                            <div class="product-badge">Nuevo</div>
+                            <div class="product-image">
+                                <img src="img/anillos/anillo4.jpg" alt="Anillo de Diamante">
+                                <div class="product-actions">
+                                    <div class="action-btn"><i class="fas fa-heart"></i></div>
+                                    <div class="action-btn add-to-cart"><i class="fas fa-shopping-bag"></i></div>
+                                    <div class="action-btn"><i class="fas fa-search"></i></div>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Solitario Diamante 24K</h3>
+                                <div class="product-price">$42,500 MXN</div>
+                                <a href="#" class="btn">Ver Detalles</a>
+                            </div>
+                        </div>
+                        <div class="product-card animate-slide-up">
+                            <div class="product-badge">Oferta</div>
+                            <div class="product-image">
+                                <img src="img/anillos/anillo5.jpg" alt="Anillo Halo">
+                                <div class="product-actions">
+                                    <div class="action-btn"><i class="fas fa-heart"></i></div>
+                                    <div class="action-btn add-to-cart"><i class="fas fa-shopping-bag"></i></div>
+                                    <div class="action-btn"><i class="fas fa-search"></i></div>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Halo Diamante 28K</h3>
+                                <div class="product-price">
+                                    <span class="original-price">$38,000</span> $34,900 MXN
+                                </div>
+                                <a href="#" class="btn">Ver Detalles</a>
+                            </div>
+                        </div>
+                        <div class="product-card animate-slide-up">
+                            <div class="product-image">
+                                <img src="img/anillos/anillo6.jpg" alt="Anillo Tres Piedras">
+                                <div class="product-actions">
+                                    <div class="action-btn"><i class="fas fa-heart"></i></div>
+                                    <div class="action-btn add-to-cart"><i class="fas fa-shopping-bag"></i></div>
+                                    <div class="action-btn"><i class="fas fa-search"></i></div>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>3 Piedras Diamante 24K</h3>
+                                <div class="product-price">$56,800 MXN</div>
+                                <a href="#" class="btn">Ver Detalles</a>
+                            </div>
+                        </div>
+                        <div class="product-card animate-slide-up">
+                            <div class="product-badge">Exclusivo</div>
+                            <div class="product-image">
+                                <img src="img/anillos/anillo7.jpg" alt="Anillo Vintage">
+                                <div class="product-actions">
+                                    <div class="action-btn"><i class="fas fa-heart"></i></div>
+                                    <div class="action-btn add-to-cart"><i class="fas fa-shopping-bag"></i></div>
+                                    <div class="action-btn"><i class="fas fa-search"></i></div>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Vintage Oro Rosa 14K</h3>
+                                <div class="product-price">$47,300 MXN</div>
+                                <a href="#" class="btn">Ver Detalles</a>
+                            </div>
+                        </div>
+                        <div class="product-card animate-slide-up">
+                            <div class="product-image">
+                                <img src="img/anillos/anillo8.jpg" alt="Anillo Moderno">
+                                <div class="product-actions">
+                                    <div class="action-btn"><i class="fas fa-heart"></i></div>
+                                    <div class="action-btn add-to-cart"><i class="fas fa-shopping-bag"></i></div>
+                                    <div class="action-btn"><i class="fas fa-search"></i></div>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Moderno Platino 14K</h3>
+                                <div class="product-price">$39,900 MXN</div>
+                                <a href="#" class="btn">Ver Detalles</a>
+                            </div>
+                        </div>
+                        <div class="product-card animate-slide-up">
+                            <div class="product-badge">Limitado</div>
+                            <div class="product-image">
+                                <img src="img/anillos/anillo9.jpg" alt="Anillo Diamante Grande">
+                                <div class="product-actions">
+                                    <div class="action-btn"><i class="fas fa-heart"></i></div>
+                                    <div class="action-btn add-to-cart"><i class="fas fa-shopping-bag"></i></div>
+                                    <div class="action-btn"><i class="fas fa-search"></i></div>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Diamante 12K</h3>
+                                <div class="product-price">$89,500 MXN</div>
+                                <a href="#" class="btn">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="screen" id="policies">
+            <section class="policies">
+                <div class="container">
+                    <div class="section-title">
+                        <h2 class="animate-fade-in">Nuestras Políticas</h2>
+                        <p class="animate-fade-in">Comprometidos con la excelencia en cada detalle de tu experiencia de compra.</p>
+                    </div>
+                    
+                    <div class="policies-grid">
+                        <div class="policy-card animate-slide-up">
+                            <div class="policy-icon">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                            <h3>Garantía de Calidad</h3>
+                            <p>Todas nuestras joyas están respaldadas por una garantía de por vida contra defectos de fabricación. Utilizamos solo los mejores materiales.</p>
+                            <a href="#" class="btn btn-outline">Saber más</a>
+                        </div>
+                        
+                        <div class="policy-card animate-slide-up">
+                            <div class="policy-icon">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <h3>Cambios y Devoluciones</h3>
+                            <p>Aceptamos devoluciones dentro de los 30 días posteriores a la compra. Los artículos deben estar en su estado original, sin usar y con todas las etiquetas.</p>
+                            <a href="#" class="btn btn-outline">Saber más</a>
+                        </div>
+                        
+                        <div class="policy-card animate-slide-up">
+                            <div class="policy-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Certificación</h3>
+                            <p>Todas nuestras piedras preciosas vienen con certificados de autenticidad de laboratorios reconocidos internacionalmente, garantizando su calidad y origen.</p>
+                            <a href="#" class="btn btn-outline">Saber más</a>
+                        </div>
+                        
+                        <div class="policy-card animate-slide-up">
+                            <div class="policy-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <h3>Envío Seguro</h3>
+                            <p>Envíos gratuitos a todo México en compras mayores a $10,000 MXN. Todos los envíos están asegurados y requieren firma al momento de la entrega.</p>
+                            <a href="#" class="btn btn-outline">Saber más</a>
+                        </div>
+                        
+                        <div class="policy-card animate-slide-up">
+                            <div class="policy-icon">
+                                <i class="fas fa-ruler-combined"></i>
+                            </div>
+                            <h3>Personalización</h3>
+                            <p>Ofrecemos servicios de personalización para crear la pieza perfecta para ti. Cambios de talla, grabados y diseño personalizado disponibles.</p>
+                            <a href="#" class="btn btn-outline">Saber más</a>
+                        </div>
+                        
+                        <div class="policy-card animate-slide-up">
+                            <div class="policy-icon">
+                                <i class="fas fa-spa"></i>
+                            </div>
+                            <h3>Mantenimiento</h3>
+                            <p>Servicio de limpieza y mantenimiento gratuito de por vida para todas tus joyas MyP. Visita nuestra boutique para revitalizar el brillo de tus piezas.</p>
+                            <a href="#" class="btn btn-outline">Saber más</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="screen" id="promotions">
+            <section class="promotions">
+                <div class="container">
+                    <div class="section-title">
+                        <h2 class="animate-fade-in">Promociones Exclusivas</h2>
+                        <p class="animate-fade-in">Aprovecha nuestras ofertas especiales en piezas seleccionadas.</p>
+                    </div>
+                    
+                    <div class="promo-card">
+                        <div class="promo-image" style="background-image: url('img/anillos/promo.jpg')"></div>
+                        <div class="promo-content">
+                            <div class="product-badge">Oferta Especial</div>
+                            <h2 class="animate-fade-in">Colección Verano</h2>
+                            <p class="animate-fade-in">Hasta 30% de descuento en nuestra exclusiva colección de verano. Piezas únicas con diseños frescos y modernos, perfectas para esta temporada.</p>
+                            
+                            <div class="countdown">
+                                <div class="countdown-box">
+                                    <div class="countdown-value" id="days">45</div>
+                                    <div class="countdown-label">Días</div>
+                                </div>
+                                <div class="countdown-box">
+                                    <div class="countdown-value" id="hours">00</div>
+                                    <div class="countdown-label">Horas</div>
+                                </div>
+                                <div class="countdown-box">
+                                    <div class="countdown-value" id="minutes">00</div>
+                                    <div class="countdown-label">Min</div>
+                                </div>
+                                <div class="countdown-box">
+                                    <div class="countdown-value" id="seconds">00</div>
+                                    <div class="countdown-label">Seg</div>
+                                </div>
+                            </div>
+                            
+                            <a href="#" class="btn animate-fade-in">Ver Colección</a>
+                        </div>
+                    </div>
+                    
+                    <div class="products-grid" style="margin-top: 80px;">
+                        <div class="product-card animate-slide-up">
+                            <div class="product-badge">30% OFF</div>
+                            <div class="product-image">
+                                <img src="img/anillos/anillo10.jpg" alt="Anillo de Oro">
+                                <div class="product-actions">
+                                    <div class="action-btn"><i class="fas fa-heart"></i></div>
+                                    <div class="action-btn add-to-cart"><i class="fas fa-shopping-bag"></i></div>
+                                    <div class="action-btn"><i class="fas fa-search"></i></div>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Anillo Oro 18K</h3>
+                                <div class="product-price">
+                                    <span class="original-price">$28,000</span> $21,000 MXN
+                                </div>
+                                <a href="#" class="btn">Comprar Ahora</a>
+                            </div>
+                        </div>
+                        <div class="product-card animate-slide-up">
+                            <div class="product-badge">30% OFF</div>
+                            <div class="product-image">
+                                <img src="img/anillos/anillo11.jpg" alt="Collar Diamante">
+                                <div class="product-actions">
+                                    <div class="action-btn"><i class="fas fa-heart"></i></div>
+                                    <div class="action-btn add-to-cart"><i class="fas fa-shopping-bag"></i></div>
+                                    <div class="action-btn"><i class="fas fa-search"></i></div>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Variedad Anillo Compromiso 10K-18K</h3>
+                                <div class="product-price">
+                                    <span class="original-price">$45,000</span> $31,500 MXN
+                                </div>
+                                <a href="#" class="btn">Comprar Ahora</a>
+                            </div>
+                        </div>
+                        <div class="product-card animate-slide-up">
+                            <div class="product-badge">20% OFF</div>
+                            <div class="product-image">
+                                <img src="img/anillos/anillo12.jpg" alt="Pulsera Platino">
+                                <div class="product-actions">
+                                    <div class="action-btn"><i class="fas fa-heart"></i></div>
+                                    <div class="action-btn add-to-cart"><i class="fas fa-shopping-bag"></i></div>
+                                    <div class="action-btn"><i class="fas fa-search"></i></div>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Anillos Compromiso Oro Blanco 12K</h3>
+                                <div class="product-price">
+                                    <span class="original-price">$38,000</span> $30,400 MXN
+                                </div>
+                                <a href="#" class="btn">Comprar Ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="screen" id="contact">
+            <section class="contact">
+                <div class="container">
+                    <div class="section-title">
+                        <h2 class="animate-fade-in">Contáctanos</h2>
+                        <p class="animate-fade-in">Estamos aquí para ayudarte a encontrar la joya perfecta.</p>
+                    </div>
+                    
+                    <div class="contact-container">
+                        <div class="contact-info">
+                            <div class="contact-item animate-slide-up">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>MyP Joyeros</h4>
+                                    <p>Av Cultura 55 Ote, Proyecto Rio Sonora Hermosillo XXI, 83280 Hermosillo, Son.</p>
+                                    <a href="https://maps.app.goo.gl/TSdfYPWNguWpoY2H7" target="_blank">Ver en Google Maps</a>
+                                </div>
+                            </div>
+                            <div class="contact-item animate-slide-up">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Horario</h4>
+                                    <p>Lunes a Sábado: 10:00 - 21:00<br>Domingo: 10:00 - 20:00</p>
+                                </div>
+                            </div>
+                            <div class="contact-item animate-slide-up">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Contacto</h4>
+                                    <p>+52 55 1234 5678<br>contacto@mypjoyeros.com</p>
+                                    <a href="https://wa.me/526621383780" target="_blank">Enviar mensaje por WhatsApp</a>
+                                </div>
+                            </div>
+                            <div class="contact-item animate-slide-up">
+                                <div class="contact-icon">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Citas Privadas</h4>
+                                    <p>Disfruta de una experiencia de compra personalizada en nuestro salón VIP con atención exclusiva.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-form animate-fade-in">
+                            <h3>Agenda una Cita Privada</h3>
+                            <p>Completa el formulario y nos pondremos en contacto contigo para coordinar tu visita.</p>
+                            <form>
+                                <div class="form-group">
+                                    <label for="name">Nombre Completo</label>
+                                    <input type="text" id="name" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Correo Electrónico</label>
+                                    <input type="email" id="email" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Teléfono</label>
+                                    <input type="tel" id="phone" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="date">Fecha Preferida</label>
+                                    <input type="date" id="date" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Interés Especial</label>
+                                    <textarea id="message" class="form-control" required></textarea>
+                                </div>
+                                <button type="submit" class="btn">Solicitar Cita</button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="map-container animate-slide-up">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3463.623342034135!2d-110.97715072468436!3d29.76042437587601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ce8440f6d2fe6f%3A0x1b0f4e3c6e5a5b1f!2sAv%20Cultura%2055%20Ote%2C%20Proyecto%20Rio%20Sonora%20Hermosillo%20XXI%2C%2083280%20Hermosillo%2C%20Son.!5e0!3m2!1ses-419!2smx!4v1690400000000!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">MyP <span>Joyeros</span></div>
+                    <p>Creando joyas excepcionales desde 1999. Cada pieza es un testimonio de artesanía, tradición y excelencia en el diseño.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-section">
+                    <h4 class="footer-heading">Colecciones</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Anillos</a></li>
+                        <li><a href="#">Relojes</a></li>
+                        <li><a href="#">Novedades</a></li>
+                        <li><a href="#">Edición Limitada</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-section">
+                    <h4 class="footer-heading">Sobre MyP</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Nuestra Historia</a></li>
+                        <li><a href="#">¿Quienes somos?</a></li>
+                        <li><a href="#">Reseñas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-section">
+                    <h4 class="footer-heading">Servicios</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Personalización</a></li>
+                        <li><a href="#">Garantía</a></li>
+                        <li><a href="#">Cuidado de Joyas</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Contáctanos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 MyP Joyeros. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <div class="cart-modal">
+        <div class="cart-header">
+            <h3>Tu Carrito</h3>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-summary">
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span id="cart-subtotal">$0.00 MXN</span>
+            </div>
+            <div class="summary-row">
+                <span>Envío</span>
+                <span>Gratis</span>
+            </div>
+            <div class="summary-row summary-total">
+                <span>Total</span>
+                <span id="cart-total">$0.00 MXN</span>
+            </div>
+            <button class="btn checkout-btn">Proceder al Pago</button>
+        </div>
+    </div>
+
+    <a href="https://wa.me/526621383780" target="_blank" class="whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="index.js"></script>
+</body>
+</html>
